@@ -1,0 +1,123 @@
+.full {
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    width   : 100%;
+    height  : 100%;
+}
+
+.scannerFooter {
+    left           : 0;
+    bottom         : 0;
+    position       : absolute;
+    height         : 6em;
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    flex-direction : row;
+    justify-content: space-evenly;
+    background     : rgba(0, 0, 0, 0.8);
+}
+
+.icon {
+    width         : 2.5em;
+    height        : 2.5em;
+    pointer-events: all;
+    cursor        : pointer;
+}
+
+.shutter {
+    width           : 4em;
+    height          : 4em;
+    margin-top      : calc(var(--shutter-size) / -2);
+    margin-left     : calc(var(--shutter-size) / -2);
+    border-radius   : 100%;
+    background-color: rgb(198, 205, 216);
+    padding         : 12px;
+    box-sizing      : border-box;
+    cursor          : pointer;
+}
+
+.shutterButton {
+    background-color: rgb(255, 255, 255);
+    border-radius   : 100%;
+    width           : 100%;
+    height          : 100%;
+}
+
+.shutterButton:active {
+    background-color: rgb(220, 220, 220);
+    border-radius   : 100%;
+    width           : 100%;
+    height          : 100%;
+}
+
+.scanner, 
+.scan-again{
+    background: black;
+}
+
+body {
+    overflow           : hidden;
+    position           : fixed;
+    width              : 100%;
+    height             : 100%;
+    margin             : 0;
+    padding            : 0;
+    font-family        : "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight        : 400;
+    font-style         : normal;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+}
+
+.home,
+.do-again,
+.instruction {
+    overflow  : auto;
+    height    : 100%;
+    text-align: center;
+}
+
+.text-white{
+    color: #fff;
+}
+
+.startCameraBtn {
+    padding         : 15px 50px;
+    color           : #fff;
+    background-color: #0cb2b0;
+    cursor          : pointer;
+    border          : none;
+    font-size       : 18px;
+    font-weight     : 400;
+    margin          : 20px 0;
+    border-radius   : 50px;
+}
+
+.d-flex {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 100%;
+    height         : 100%;
+}
+
+.d-flex .fa-1x {
+    font-size  : 24px;
+    margin-left: 7px;
+}
+
+.d-flex.success {
+    color: green;
+}
+
+.d-flex.fail {
+    color: red;
+}
+
+.d-column {
+    flex-direction: column;
+}

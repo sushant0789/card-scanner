@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Scanner</title>
+    <!-- javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS File -->
+    <link
+      href="assets/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- fontawesome css -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Preloader Start -->
+    <div id="preloader-active" style="display: none">
+      <div class="preloader">
+        <div class="preloader-inner position-relative">
+          <div class="preloader-circle"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader Start -->
+    <div class="home d-flex d-column">
+      <h2>Swing front of card</h2>
+
+      <div>
+        <button class="startCameraBtn" onclick="openCam()">Start Scan</button>
+      </div>
+    </div>  
+    <div class="scanner full" style="display: none">
+      <div class="scannerContent">
+        <h3 class="instruction full d-flex text-white">Tilt a card up and down</h3>
+        <video
+          class="camera full"
+          muted
+          autoplay="autoplay"
+          playsinline="playsinline"
+          webkit-playsinline
+        ></video>
+      </div>
+      <div class="scannerFooter">
+        <div class="shutter">
+          <div class="shutterButton" onclick="failCam()"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scan-again full" style="display: none">
+      <div class="scannerContent">
+        <h3 class="instruction full d-flex text-white">Tilt a card further up and down</h3>
+        <video
+          class="camera full"
+          muted
+          autoplay="autoplay"
+          playsinline="playsinline"
+          webkit-playsinline
+        ></video>
+      </div>
+      <div class="scannerFooter">
+        <div class="shutter">
+          <div class="shutterButton" onclick="successCam()"></div>
+        </div>
+      </div>
+    </div>
+    <div class="resultViewer full" style="display: none">
+      <div class="d-flex d-column">
+        <h2>Approved <img src="assets/images/okay.svg" alt="okay" width="24" /></h2>
+        <h2>Not Approved <img src="assets/images/cancel.svg" alt="cancel" width="24" /></h2>
+      </div>
+    </div>
+    
+  </body>
+</html>
