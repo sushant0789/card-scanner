@@ -185,6 +185,19 @@
 .text-white{
     color: #fff;
 }
+.text-center{
+    text-align: center;
+}
+.icon.w-24{
+    width: 24px;
+}
+.width-100{
+    width: 160px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 .startCameraBtn {
     padding         : 15px 50px;
